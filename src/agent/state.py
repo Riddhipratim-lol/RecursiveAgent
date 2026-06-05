@@ -4,5 +4,7 @@ import operator
 class AgentState(TypedDict):
     prompt: str
     generated_code: str
-    error_message: Optional[str]
+    test_cases: str
+    repl_output: Optional[str]
     iterations: Annotated[int, operator.add]
+    human_feedback: str
