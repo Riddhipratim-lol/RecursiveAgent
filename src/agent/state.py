@@ -7,4 +7,4 @@ class AgentState(TypedDict):
     test_cases: str
     repl_output: Optional[str]
     iterations: Annotated[int, operator.add]
-    # human_feedback: str (For Future Use)
+    human_feedback: str
